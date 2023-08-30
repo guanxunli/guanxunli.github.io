@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-<!--Author profiles on <a href="https://scholar.google.com/citations?user=eAPnyCsAAAAJ&hl" target="_blank">Google Scholar</a>.-->
+Author profiles on <a href="https://scholar.google.com/citations?user=jxFkCp8AAAAJ&hl=en" target="_blank">Google Scholar</a>.
 
 ## Preprints ##
 * **Importance is Important: A Guide to Informed Importance Tempering Methods.** <br/>
