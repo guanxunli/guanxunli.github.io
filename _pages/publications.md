@@ -17,7 +17,7 @@ Yang, Y., Lin, Y.T., *Li, G.*, Zhong, Y., Xu, Q. and Cai, J.J., 2023.  bioRxiv, 
 * **Fast Replica Exchange Stochastic Gradient Langevin Dynamics.** <br/>
 *Li, G.*, Lin, G., Zhang, Z. and Zhou, Q., 2023. arXiv preprint arXiv:2301.01898. <a href="https://arxiv.org/abs/2301.01898" target="_blank">(arXiv)</a>
 
-## Journal Publications ## <br/>
+## Journal Publications ##
 * **Bayesian Multi-task Variable Selection with an Application to Differential DAG Analysis.** <br/>
 *Li. G.* and Zhou. Q., 2023. Accepted by Journal of Computational and Graphical Statistics. <a href="https://arxiv.org/pdf/2206.14303.pdf" target="_blank">(arXiv)</a>
 
