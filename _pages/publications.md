@@ -8,7 +8,7 @@ author_profile: true
 <!--Author profiles on <a href="https://scholar.google.com/citations?user=eAPnyCsAAAAJ&hl" target="_blank">Google Scholar</a>.-->
 
 ## Preprints ##
-1. **Importance is Important: A Guide to Informed Importance Tempering Methods.** <br/>
+* **Importance is Important: A Guide to Informed Importance Tempering Methods.** <br/>
 *Li, G.*, Smith, A. and Zhou, Q., 2023. arXiv preprint arXiv:2304.06251. <a href="https://arxiv.org/pdf/2304.06251.pdf" target="_blank">(arXiv)</a>
 
 * **Interpretable modeling of time-resolved single-cell gene-protein expression using CrossmodalNet.** <br/>
