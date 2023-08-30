@@ -12,9 +12,9 @@ redirect_from:
 
 About Me
 =====
-I am a postdoctoral research associate in the Department of Statistics at Texas A&M University advised by professor <a href="https://zhangxiany-tamu.github.io/research" target="_blank">Xianyang Zhang</a>. I obtained my Ph.D.in Statistics at Texas A&M University advised by Dr. <a href="https://web.stat.tamu.edu/~quan/" target="_blank">Quan Zhou</a> and co-advised by Dr.<a href="https://sds.cuhk.edu.cn/en/teacher/470" target="_blank">Jianhua Huang</a>.
+I am a postdoctoral research associate in the Department of Statistics at Texas A&M University advised by professor <a href="https://zhangxiany-tamu.github.io/research" target="_blank">Xianyang Zhang</a>. I obtained my Ph.D.in Statistics at Texas A&M University advised by Dr. <a href="https://web.stat.tamu.edu/~quan/" target="_blank">Quan Zhou</a> and co-advised by Dr. <a href="https://sds.cuhk.edu.cn/en/teacher/470" target="_blank">Jianhua Huang</a>.
 
-You can find my completed CV <a href="https://github.com/guanuxnli/guanxunli.github.io/files/cv.pdf" target="_blank">here</a>. 
+You can find my completed CV <a href="https://github.com/guanuxnli/guanxunli.github.io/files/CV.pdf" target="_blank">here</a>. 
 
 Education
 =====
@@ -24,8 +24,8 @@ Education
 
 Research Interest
 =====
-* Mutiple Testings
-* MCMC Methodology
+* Multiple Hypothesis Testing
+* Markov chain Monte Carlo (MCMC) Methodology
 * Bayesian Variable Selection
 * Single-cell RNA Sequencing Data Analysis
 * Microbiome Sequencing Data Analysis
