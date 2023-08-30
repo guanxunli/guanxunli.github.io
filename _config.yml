@@ -79,8 +79,8 @@ analytics:
 # Site Author
 author:
   name             : "Guanxun Li"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  avatar           : "photo.png"
+  bio              : 
   location         : "College Station, Texas"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
