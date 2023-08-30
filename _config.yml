@@ -84,11 +84,11 @@ author:
   location         : "College Station, Texas"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : # "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?user=jxFkCp8AAAAJ&hl=en"
   email            : guanxun@stat.tamu.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   github           : "guanxunli"
-  orcid            : # "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0002-2449-4469"
 
 # Reading Files
 include:
