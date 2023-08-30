@@ -14,7 +14,7 @@ About Me
 =====
 I am a postdoctoral research associate in the Department of Statistics at Texas A&M University advised by professor <a href="https://zhangxiany-tamu.github.io/research" target="_blank">Xianyang Zhang</a>. I obtained my Ph.D.in Statistics at Texas A&M University advised by Dr. <a href="https://web.stat.tamu.edu/~quan/" target="_blank">Quan Zhou</a> and co-advised by Dr. <a href="https://sds.cuhk.edu.cn/en/teacher/470" target="_blank">Jianhua Huang</a>.
 
-You can find my completed CV <a href="https://github.com/guanuxnli/guanxunli.github.io/files/CV.pdf" target="_blank">here</a>. 
+You can find my completed CV <a href="https://github.com/guanxunli/guanxunli.github.io/blob/master/files/CV.pdf" target="_blank">here</a>. 
 
 Education
 =====
