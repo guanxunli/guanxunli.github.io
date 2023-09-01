@@ -19,7 +19,7 @@ You can find my completed CV <a href="/files/CV.pdf" target="_blank">here</a>.
 Education
 =====
 * Ph.D in Statistics, Texas A&M University, 2018 - 2022
-* M.S. in Mathematics, Texas A&M University, 2016 - 2017
+* M.S. in Mathematics, Texas A&M University, 2016 - 2018
 * B.S. in Applied Mathematics, Beihang University, 2013 - 2017
 
 Research Interest
