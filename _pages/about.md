@@ -24,7 +24,7 @@ Education
 
 Research Interest
 =====
-* Multiple Hypothesis Testing
+* Large-scale Inference
 * Markov chain Monte Carlo (MCMC) Methodology
 * Bayesian Variable Selection
 * Single-cell RNA Sequencing Data Analysis
