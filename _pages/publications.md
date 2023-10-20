@@ -8,6 +8,12 @@ author_profile: true
 Author profiles on <a href="https://scholar.google.com/citations?user=jxFkCp8AAAAJ&hl=en" target="_blank">Google Scholar</a>.
 
 ## Preprints ##
+* **On E-values, Multiple Testing and Beyond.** <br/>
+*Li, G.* and Zhang, X.
+
+* **Robust Differential Abundance Analysis of Microbiome Sequencing Data.** <br/>
+*Li, G.*, Yang, L., Chen, J. and Zhang, X.
+
 * **Importance is Important: A Guide to Informed Importance Tempering Methods.** <br/>
 *Li, G.*, Smith, A. and Zhou, Q., 2023. arXiv preprint arXiv:2304.06251. <a href="https://arxiv.org/pdf/2304.06251.pdf" target="_blank">(arXiv)</a>
 
@@ -37,4 +43,4 @@ Xu, Q., *Li, G.*, Osorio, D., Zhong, Y., Yang, Y., Lin, Y.T., Zhang, X. and Cai,
 Osorio, D., Zhong, Y., *Li, G.*, Huang, J.Z. and Cai, J.J., 2020. Patterns, 1(9), p.100139. <a href="https://www.sciencedirect.com/science/article/pii/S2666389920301872" target="_blank">(link)</a>
 
 * **Single-cell expression variability implies cell function.** <br/>
-Osorio, D., Yu, X., Zhong, Y., \textbf{Li, G.}, Serpedin, E., Huang, J.Z. and Cai, J.J., 2019.  Cells, 9(1), p.14 <a href="https://pubmed.ncbi.nlm.nih.gov/31861624/" target="_blank">(link)</a>
+Osorio, D., Yu, X., Zhong, Y., *Li, G.*, Serpedin, E., Huang, J.Z. and Cai, J.J., 2019.  Cells, 9(1), p.14 <a href="https://pubmed.ncbi.nlm.nih.gov/31861624/" target="_blank">(link)</a>
