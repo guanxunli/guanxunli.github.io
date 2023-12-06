@@ -9,7 +9,7 @@ Author profiles on <a href="https://scholar.google.com/citations?user=jxFkCp8AAA
 
 ## Preprints ##
 * **On E-values, Multiple Testing and Beyond.** <br/>
-*Li, G.* and Zhang, X.
+*Li, G.* and Zhang, X. <a href="https://arxiv.org/pdf/2304.06251.pdf" target="_blank">(arXiv)</a>
 
 * **Importance is Important: A Guide to Informed Importance Tempering Methods.** <br/>
 *Li, G.*, Smith, A. and Zhou, Q., 2023. arXiv preprint arXiv:2304.06251. <a href="https://arxiv.org/pdf/2304.06251.pdf" target="_blank">(arXiv)</a>
