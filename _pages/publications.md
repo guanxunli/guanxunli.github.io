@@ -19,13 +19,13 @@ Author profiles on <a href="https://scholar.google.com/citations?user=jxFkCp8AAA
 
 ## Journal Publications ##
 * **Robust Differential Abundance Analysis of Microbiome Sequencing Data.** <br/>
-*Li, G.*, Yang, L., Chen, J. and Zhang, X., 2023. Accepted by Genes.
+*Li, G.*, Yang, L., Chen, J. and Zhang, X., 2023. Genes, 14(11), p.2000. <a href="https://www.mdpi.com/2073-4425/14/11/2000" target="_blank">(link)</a>
 
 * **Bayesian Multi-task Variable Selection with an Application to Differential DAG Analysis.** <br/>
-*Li. G.* and Zhou. Q., 2023. Accepted by Journal of Computational and Graphical Statistics. <a href="https://arxiv.org/pdf/2206.14303.pdf" target="_blank">(arXiv)</a>
+*Li, G*. and Zhou, Q., 2024. Journal of Computational and Graphical Statistics, 33(1), pp.35-46. <a href="https://www.tandfonline.com/doi/full/10.1080/10618600.2023.2252023" target="_blank">(link)</a>
 
 * **Interpretable modeling of time-resolved single-cell gene-protein expression using CrossmodalNet.** <br/>
-Yang, Y., Lin, Y.T., *Li, G.*, Zhong, Y., Xu, Q. and Cai, J.J., 2023. Briefings in Bioinformatics, 24(6), p.bbad342. <a href="https://www.biorxiv.org/content/10.1101/2023.05.16.541011v2" target="_blank">(bioRxiv)</a>
+Yang, Y., Lin, Y.T., *Li, G.*, Zhong, Y., Xu, Q. and Cai, J.J., 2023. Briefings in Bioinformatics, 24(6), p.bbad342. <a href="https://academic.oup.com/bib/article/24/6/bbad342/7291995" target="_blank">(link)</a>
 
 * **Gene knockout inference with variational graph autoencoder learning single-cell gene regulatory networks.** <br/>
 Yang, Y., *Li, G.*, Zhong, Y., Xu, Q., Chen, B.J., Lin, Y.T., Chapkin, R.S. and Cai, J.J., 2023. Nucleic Acids Research, p.gkad450. <a href="https://academic.oup.com/nar/article/51/13/6578/7184155" target="_blank">(link)</a>
