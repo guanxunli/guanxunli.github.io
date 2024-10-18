@@ -11,18 +11,21 @@ Author profiles on <a href="https://scholar.google.com/citations?user=jxFkCp8AAA
 * **On E-values, Multiple Testing and Beyond.** <br/>
 *Li, G.* and Zhang, X. <a href="https://arxiv.org/pdf/2304.06251.pdf" target="_blank">(arXiv)</a>
 
-* **Importance is Important: A Guide to Informed Importance Tempering Methods.** <br/>
+* **Importance is Important: Generalized Markov Chain Importance Sampling Methods.** <br/>
 *Li, G.*, Smith, A. and Zhou, Q., 2023. arXiv preprint arXiv:2304.06251. <a href="https://arxiv.org/pdf/2304.06251.pdf" target="_blank">(arXiv)</a>
 
 * **Fast Replica Exchange Stochastic Gradient Langevin Dynamics.** <br/>
 *Li, G.*, Lin, G., Zhang, Z. and Zhou, Q., 2023. arXiv preprint arXiv:2301.01898. <a href="https://arxiv.org/abs/2301.01898" target="_blank">(arXiv)</a>
 
 ## Journal Publications ##
-* **Robust Differential Abundance Analysis of Microbiome Sequencing Data.** <br/>
-*Li, G.*, Yang, L., Chen, J. and Zhang, X., 2023. Genes, 14(11), p.2000. <a href="https://www.mdpi.com/2073-4425/14/11/2000" target="_blank">(link)</a>
+* **A Note on E-values and Multiple Testing.** <br />
+*Li, G*, and Zhang, X., 2024. Biometrika. <a href = "https://academic.oup.com/biomet/advance-article/doi/10.1093/biomet/asae050/7816239?login=true" target = "_blank">(link)</a>
 
 * **Bayesian Multi-task Variable Selection with an Application to Differential DAG Analysis.** <br/>
 *Li, G*. and Zhou, Q., 2024. Journal of Computational and Graphical Statistics, 33(1), pp.35-46. <a href="https://www.tandfonline.com/doi/full/10.1080/10618600.2023.2252023" target="_blank">(link)</a>
+
+* **Robust Differential Abundance Analysis of Microbiome Sequencing Data.** <br/>
+*Li, G.*, Yang, L., Chen, J. and Zhang, X., 2023. Genes, 14(11), p.2000. <a href="https://www.mdpi.com/2073-4425/14/11/2000" target="_blank">(link)</a>
 
 * **Interpretable modeling of time-resolved single-cell gene-protein expression using CrossmodalNet.** <br/>
 Yang, Y., Lin, Y.T., *Li, G.*, Zhong, Y., Xu, Q. and Cai, J.J., 2023. Briefings in Bioinformatics, 24(6), p.bbad342. <a href="https://academic.oup.com/bib/article/24/6/bbad342/7291995" target="_blank">(link)</a>
@@ -44,3 +47,7 @@ Osorio, D., Zhong, Y., *Li, G.*, Huang, J.Z. and Cai, J.J., 2020. Patterns, 1(9)
 
 * **Single-cell expression variability implies cell function.** <br/>
 Osorio, D., Yu, X., Zhong, Y., *Li, G.*, Serpedin, E., Huang, J.Z. and Cai, J.J., 2019.  Cells, 9(1), p.14 <a href="https://pubmed.ncbi.nlm.nih.gov/31861624/" target="_blank">(link)</a>
+
+## Conference Publications ##
+* **Segmenting Watermarked Texts From Language Models.** <br />
+Li, X., *Li, G.* (co-first author) and Zhang, X., 2024. Conference on Neural Information Processing Systems (NeurIPS) 2024.
