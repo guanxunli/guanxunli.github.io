@@ -12,6 +12,5 @@ author_profile: true
 ## Teaching Assistant ##
 * Statistical Methodology II-Bayesian Modeling and Inference, 2022 Spring, TAMU.
 * Design and Analysis of Experiments, 2019 fall, 2020 fall, 2021 fall, TAMU.
-* Applied Multivariate Analysis and Statistical Learning, 2019 Fall, TAMU.
+* Applied Multivariate Analysis and Statistical Learning, 2018 Fall, 2019 Fall, TAMU.
 * Statistics in Research I, 2019 Summer, TAMU.
-* Applied Multivariate Analysis and Statistical Learning, 2018 Fall, TAMU.
