@@ -5,6 +5,7 @@ permalink: /teaching/
 author_profile: true
 ---
 
+## Instructor ##
 * Introduction to Statistics B, 2024 Fall, BNUZ.
 * Introduction to Statistical Methods, 2020 Summer, TAMU.
 
