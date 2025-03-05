@@ -7,6 +7,8 @@ author_profile: true
 
 You can view my author profiles on [Google Scholar](https://scholar.google.com/citations?user=jxFkCp8AAAAJ&hl=en).
 
+*Notations*: <sup>*</sup> - Co-first author, <sup>#</sup> - Alphabetical ordering of authors.
+
 ## Preprints
 * **On E-values, Multiple Testing and Beyond.**  
 *Li, G.* and Zhang, X. [arXiv](https://arxiv.org/pdf/2304.06251.pdf)
@@ -15,11 +17,11 @@ You can view my author profiles on [Google Scholar](https://scholar.google.com/c
 *Li, G.*, Smith, A., and Zhou, Q., 2023. arXiv preprint. [arXiv](https://arxiv.org/pdf/2304.06251.pdf)
 
 * **Fast Replica Exchange Stochastic Gradient Langevin Dynamics.**  
-*Li, G.*, Lin, G., Zhang, Z., and Zhou, Q., 2023. arXiv preprint. [arXiv](https://arxiv.org/abs/2301.01898)
+*Li, G.<sup>#</sup>*, Lin, G., Zhang, Z., and Zhou, Q., 2023. arXiv preprint. [arXiv](https://arxiv.org/abs/2301.01898)
 
 ## Journal Publications
 * **A Note on E-values and Multiple Testing.**  
-*Li, G.*, and Zhang, X., 2024. Biometrika. [link](https://academic.oup.com/biomet/advance-article/doi/10.1093/biomet/asae050/7816239?login=true)
+*Li, G.*, and Zhang, X., 2024. Biometrika, 112(1). [link](https://academic.oup.com/biomet/advance-article/doi/10.1093/biomet/asae050/7816239?login=true)
 
 * **Bayesian Multi-task Variable Selection with an Application to Differential DAG Analysis.**  
 *Li, G.*, and Zhou, Q., 2024. Journal of Computational and Graphical Statistics, 33(1), 35-46. [link](https://www.tandfonline.com/doi/full/10.1080/10618600.2023.2252023)
@@ -49,5 +51,8 @@ Osorio, D., Zhong, Y., *Li, G.*, Huang, J.Z., and Cai, J.J., 2020. Patterns, 1(9
 Osorio, D., Yu, X., Zhong, Y., *Li, G.*, Serpedin, E., Huang, J.Z., and Cai, J.J., 2019. Cells, 9(1), 14. [link](https://pubmed.ncbi.nlm.nih.gov/31861624/)
 
 ## Conference Publications
+* **A Likelihood Based Approach for Watermark Detection.**
+Li, X., *Li, G.<sup>*</sup>* and Zhang, X., 2025. International Conference on Artificial Intelligence and Statistics(AISTATS) 2025.
+
 * **Segmenting Watermarked Texts from Language Models.**  
-Li, X., *Li, G.* (co-first author) and Zhang, X., 2024. Conference on Neural Information Processing Systems (NeurIPS) 2024.
+Li, X., *Li, G.<sup>*</sup>* and Zhang, X., 2024. Conference on Neural Information Processing Systems (NeurIPS) 2024.
