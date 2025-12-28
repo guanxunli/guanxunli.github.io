@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 ## Instructor ##
-* Non-parametric Statistics, 2025 Spring, BNUZ.
+* Non-parametric Statistics, 2025 Spring, 2025 Fall, BNUZ.
 * Bayesian Analysis, 2025 Spring, BNUZ.
 * Introduction to Statistics B, 2024 Fall, BNUZ.
 * Introduction to Statistical Methods, 2020 Summer, TAMU.

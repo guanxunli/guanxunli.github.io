@@ -18,6 +18,11 @@ I am currently serving as an Assistant Professor in the Department of Statistics
 
 You can view my full CV <a href="/files/CV.pdf" target="_blank">here</a>.
 
+Academic Positions
+=====
+* Assistant Professor, Department of Statistics, Beijing Normal University at Zhuhai, 2024 - Present
+* Postdoctoral Research Associate, Department of Statistics, Texas A&M University, 2022 - 2024
+
 Education
 =====
 * Ph.D. in Statistics, Texas A&M University, 2018 - 2022
@@ -26,9 +31,9 @@ Education
 
 Research Interests
 =====
-* Large-scale Inference
+* Multiple Testing
+* Watermarking in Large Language Models
 * Markov Chain Monte Carlo (MCMC) Methodology
 * Bayesian Variable Selection
-* Watermarking in large language models
 * Single-cell RNA Sequencing Data Analysis
 * Microbiome Sequencing Data Analysis
