@@ -1,0 +1,57 @@
+type = "about"
+title = "About"
+
+[profile]
+research_interests = [
+  "Multiple Testing",
+  "Watermarking in Large Language Models",
+  "Markov Chain Monte Carlo (MCMC) Methodology",
+  "Bayesian Variable Selection",
+  "Single-cell RNA Sequencing Data Analysis",
+  "Microbiome Sequencing Data Analysis"
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "About"
+
+[[sections]]
+id = "experience"
+type = "cards"
+title = "Experience"
+
+[[sections.items]]
+title = "Assistant Professor"
+subtitle = "Department of Statistics"
+institution = "Beijing Normal University at Zhuhai"
+date = "2024 - Present"
+
+[[sections.items]]
+title = "Postdoctoral Research Associate"
+subtitle = "Department of Statistics"
+institution = "Texas A&M University"
+date = "2022 - 2024"
+content = "Worked with [Xianyang Zhang](https://zhangxiany-tamu.github.io/research)."
+
+[[sections]]
+id = "education"
+type = "cards"
+title = "Education"
+
+[[sections.items]]
+title = "Ph.D. in Statistics"
+institution = "Texas A&M University"
+date = "2018 - 2022"
+content = "Advised by [Quan Zhou](https://web.stat.tamu.edu/~quan/) and co-advised by [Jianhua Huang](https://sds.cuhk.edu.cn/en/teacher/470)."
+
+[[sections.items]]
+title = "M.S. in Mathematics"
+institution = "Texas A&M University"
+date = "2016 - 2018"
+
+[[sections.items]]
+title = "B.S. in Applied Mathematics"
+institution = "Beihang University"
+date = "2013 - 2017"

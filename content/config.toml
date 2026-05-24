@@ -1,0 +1,64 @@
+[site]
+title = "Guanxun Li"
+description = "Assistant Professor of Statistics at Beijing Normal University at Zhuhai."
+favicon = "/favicon.svg"
+last_updated = "May 24, 2026"
+
+[author]
+name = "Guanxun Li"
+title = "Assistant Professor"
+institution = "Beijing Normal University at Zhuhai"
+avatar = "/profile.png"
+
+[social]
+email = "guanxun@bnu.edu.cn"
+location = "Zhuhai, Guangdong, China"
+location_url = "https://www.google.com/maps/search/Beijing+Normal+University+Zhuhai"
+location_details = [
+  "Department of Statistics,",
+  "Beijing Normal University at Zhuhai,",
+  "Zhuhai, Guangdong, China"
+]
+google_scholar = "https://scholar.google.com/citations?user=jxFkCp8AAAAJ&hl=en"
+orcid = "https://orcid.org/0000-0002-2449-4469"
+github = "https://github.com/guanxunli"
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = false
+locales = ["en"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = false
+switcher = false
+
+[i18n.labels]
+en = "English"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Teaching"
+type = "page"
+target = "teaching"
+href = "/teaching"
+
+[[navigation]]
+title = "CV"
+type = "link"
+target = "cv"
+href = "/assets/cv.pdf"

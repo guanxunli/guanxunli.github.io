@@ -1,0 +1,53 @@
+type = "card"
+title = "Teaching"
+description = "Grouped by course title, with repeated offerings listed by semester."
+
+# TODO: Add course-page or syllabus links to individual items if you would like them shown as buttons.
+
+[[items]]
+title = "Non-parametric Statistics"
+role = "Instructor"
+institution = "Beijing Normal University at Zhuhai"
+terms = ["Spring 2025", "Fall 2025"]
+
+[[items]]
+title = "Bayesian Analysis"
+role = "Instructor"
+institution = "Beijing Normal University at Zhuhai"
+terms = ["Spring 2025"]
+
+[[items]]
+title = "Introduction to Statistics B"
+role = "Instructor"
+institution = "Beijing Normal University at Zhuhai"
+terms = ["Fall 2024"]
+
+[[items]]
+title = "Introduction to Statistical Methods"
+role = "Instructor"
+institution = "Texas A&M University"
+terms = ["Summer 2020"]
+
+[[items]]
+title = "Statistical Methodology II: Bayesian Modeling and Inference"
+role = "Teaching Assistant"
+institution = "Texas A&M University"
+terms = ["Spring 2022"]
+
+[[items]]
+title = "Design and Analysis of Experiments"
+role = "Teaching Assistant"
+institution = "Texas A&M University"
+terms = ["Fall 2019", "Fall 2020", "Fall 2021"]
+
+[[items]]
+title = "Applied Multivariate Analysis and Statistical Learning"
+role = "Teaching Assistant"
+institution = "Texas A&M University"
+terms = ["Fall 2018", "Fall 2019"]
+
+[[items]]
+title = "Statistics in Research I"
+role = "Teaching Assistant"
+institution = "Texas A&M University"
+terms = ["Summer 2019"]
