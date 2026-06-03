@@ -7,6 +7,7 @@ export interface Author {
   isHighlighted?: boolean;
   isCorresponding?: boolean;
   isCoAuthor?: boolean;
+  isStudent?: boolean;
 }
 
 export type BibTeXInlineNode =
@@ -55,6 +56,10 @@ export interface Publication {
   preview?: string;
   summary?: string;
   researchArea: ResearchArea;
+  researchGroup?: string;
+  researchGroupDescription?: string;
+  researchGroupOrder?: number;
+  publicationOrder?: number;
   description?: string;
 }
 

@@ -25,6 +25,13 @@ interface PublicationLink {
     href: string;
 }
 
+interface PublicationGroup {
+    title: string;
+    description?: string;
+    order: number;
+    publications: Publication[];
+}
+
 function buildPublicationLinks(pub: Publication): PublicationLink[] {
     const links: PublicationLink[] = [];
 
@@ -72,6 +79,44 @@ export default function PublicationsList({ config, publications, embedded = fals
             return matchesSearch && matchesYear && matchesType;
         });
     }, [publications, searchQuery, selectedYear, selectedType]);
+
+    const publicationGroups = useMemo(() => {
+        const groups = new Map<string, PublicationGroup>();
+
+        filteredPublications.forEach((pub) => {
+            const title = pub.researchGroup || 'Other Publications';
+            const existing = groups.get(title);
+
+            if (existing) {
+                existing.publications.push(pub);
+                if (!existing.description && pub.researchGroupDescription) {
+                    existing.description = pub.researchGroupDescription;
+                }
+                return;
+            }
+
+            groups.set(title, {
+                title,
+                description: pub.researchGroupDescription,
+                order: pub.researchGroupOrder ?? 999,
+                publications: [pub],
+            });
+        });
+
+        return Array.from(groups.values())
+            .map((group) => ({
+                ...group,
+                publications: group.publications.sort((a, b) => {
+                    if (a.publicationOrder !== undefined || b.publicationOrder !== undefined) {
+                        return (a.publicationOrder ?? 9999) - (b.publicationOrder ?? 9999);
+                    }
+
+                    if (b.year !== a.year) return b.year - a.year;
+                    return a.title.localeCompare(b.title);
+                }),
+            }))
+            .sort((a, b) => a.order - b.order || a.title.localeCompare(b.title));
+    }, [filteredPublications]);
 
     return (
         <motion.div
@@ -194,17 +239,30 @@ export default function PublicationsList({ config, publications, embedded = fals
                 </AnimatePresence>
             </div>
 
-            <div className="space-y-5">
+            <div className="space-y-10">
                 {filteredPublications.length === 0 ? (
                     <div className="text-center py-12 text-neutral-500">
                         {messages.publications.noResults}
                     </div>
                 ) : (
-                    filteredPublications.map((pub, index) => {
-                        const venue = pub.journal || pub.conference || '';
-                        const links = buildPublicationLinks(pub);
+                    publicationGroups.map((group) => (
+                        <section key={group.title} className="space-y-5">
+                            <div className="space-y-2">
+                                <h2 className={`${embedded ? 'text-xl' : 'text-2xl'} font-serif font-bold text-primary`}>
+                                    {group.title}
+                                </h2>
+                                {group.description && (
+                                    <p className={`${embedded ? 'text-sm' : 'text-base'} text-neutral-600 dark:text-neutral-500 leading-relaxed max-w-3xl`}>
+                                        {group.description}
+                                    </p>
+                                )}
+                            </div>
 
-                        return (
+                            {group.publications.map((pub, index) => {
+                                const venue = pub.journal || pub.conference || '';
+                                const links = buildPublicationLinks(pub);
+
+                                return (
                             <motion.div
                                 key={pub.id}
                                 initial={{ opacity: 0, y: 20 }}
@@ -213,15 +271,37 @@ export default function PublicationsList({ config, publications, embedded = fals
                                 className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800"
                             >
                                 <div className="space-y-3">
-                                    <h3 className={`${embedded ? 'text-lg' : 'text-xl'} font-semibold text-primary leading-tight`}>
-                                        <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
-                                    </h3>
-                                    <p className={`${embedded ? 'text-sm' : 'text-base'} text-neutral-600 dark:text-neutral-400`}>
+                                    <div className="space-y-2">
+                                        <h3 className={`${embedded ? 'text-lg' : 'text-xl'} font-semibold text-primary leading-tight`}>
+                                            <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
+                                        </h3>
+                                        {pub.type === 'preprint' && (
+                                            <span className="inline-flex w-fit items-center rounded-md bg-accent/10 px-2 py-0.5 text-xs font-medium text-accent">
+                                                Preprint
+                                            </span>
+                                        )}
+                                    </div>
+                                    <p className={`${embedded ? 'text-sm' : 'text-base'} text-neutral-600 dark:text-neutral-400 leading-relaxed`}>
                                         {pub.authors.map((author, idx) => (
                                             <span key={idx}>
                                                 <span className={author.isHighlighted ? 'font-semibold text-accent' : ''}>
                                                     {author.name}
                                                 </span>
+                                                {author.isCoAuthor && (
+                                                    <span className="ml-1 align-middle text-[0.65rem] font-semibold uppercase text-info">
+                                                        Co-first author
+                                                    </span>
+                                                )}
+                                                {author.isCorresponding && (
+                                                    <span className="ml-1 align-middle text-[0.65rem] font-semibold uppercase text-success">
+                                                        Corresponding author
+                                                    </span>
+                                                )}
+                                                {author.isStudent && (
+                                                    <span className="ml-1 align-middle text-[0.65rem] font-semibold uppercase text-warning">
+                                                        Student
+                                                    </span>
+                                                )}
                                                 {idx < pub.authors.length - 1 && ', '}
                                             </span>
                                         ))}
@@ -246,8 +326,10 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     )}
                                 </div>
                             </motion.div>
-                        );
-                    })
+                                );
+                            })}
+                        </section>
+                    ))
                 )}
             </div>
         </motion.div>

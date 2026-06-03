@@ -8,13 +8,13 @@ description = "Grouped by course title, with repeated offerings listed by semest
 title = "Non-parametric Statistics"
 role = "Instructor"
 institution = "Beijing Normal University at Zhuhai"
-terms = ["Spring 2025", "Fall 2025"]
+terms = ["2025 Spring", "2025 Fall", "2026 Spring"]
 
 [[items]]
-title = "Bayesian Analysis"
+title = "Bayesian Statistics"
 role = "Instructor"
 institution = "Beijing Normal University at Zhuhai"
-terms = ["Spring 2025"]
+terms = ["2025 Spring", "2026 Spring"]
 
 [[items]]
 title = "Introduction to Statistics B"
@@ -27,27 +27,3 @@ title = "Introduction to Statistical Methods"
 role = "Instructor"
 institution = "Texas A&M University"
 terms = ["Summer 2020"]
-
-[[items]]
-title = "Statistical Methodology II: Bayesian Modeling and Inference"
-role = "Teaching Assistant"
-institution = "Texas A&M University"
-terms = ["Spring 2022"]
-
-[[items]]
-title = "Design and Analysis of Experiments"
-role = "Teaching Assistant"
-institution = "Texas A&M University"
-terms = ["Fall 2019", "Fall 2020", "Fall 2021"]
-
-[[items]]
-title = "Applied Multivariate Analysis and Statistical Learning"
-role = "Teaching Assistant"
-institution = "Texas A&M University"
-terms = ["Fall 2018", "Fall 2019"]
-
-[[items]]
-title = "Statistics in Research I"
-role = "Teaching Assistant"
-institution = "Texas A&M University"
-terms = ["Summer 2019"]

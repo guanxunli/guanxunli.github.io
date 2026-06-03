@@ -33,7 +33,7 @@ title = "Postdoctoral Research Associate"
 subtitle = "Department of Statistics"
 institution = "Texas A&M University"
 date = "2022 - 2024"
-content = "Worked with [Xianyang Zhang](https://zhangxiany-tamu.github.io/research)."
+content = "Worked with [Dr. Xianyang Zhang](https://zhangxiany-tamu.github.io)."
 
 [[sections]]
 id = "education"
@@ -44,7 +44,7 @@ title = "Education"
 title = "Ph.D. in Statistics"
 institution = "Texas A&M University"
 date = "2018 - 2022"
-content = "Advised by [Quan Zhou](https://web.stat.tamu.edu/~quan/) and co-advised by [Jianhua Huang](https://sds.cuhk.edu.cn/en/teacher/470)."
+content = "Advised by [Dr. Quan Zhou](https://zhouquan34.github.io) and co-advised by [Dr. Jianhua Huang](https://sds.cuhk.edu.cn/en/teacher/470)."
 
 [[sections.items]]
 title = "M.S. in Mathematics"

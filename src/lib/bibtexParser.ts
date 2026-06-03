@@ -44,7 +44,11 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
     const tags = entry.entryTags;
 
     // Parse authors
-    const authors = parseAuthors(tags.author || '', highlightNames);
+    const authors = parseAuthors(tags.author || '', highlightNames, {
+      corresponding: parseNameList(tags.corresponding),
+      cofirst: parseNameList(tags.cofirst),
+      student: parseNameList(tags.student),
+    });
 
     // Parse year and month
     const year = parseInt(tags.year) || new Date().getFullYear();
@@ -77,6 +81,10 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       tags: keywords,
       keywords,
       researchArea: detectResearchArea(tags.title, keywords),
+      researchGroup: cleanBibTeXString(tags.research_group),
+      researchGroupDescription: cleanBibTeXString(tags.research_group_description),
+      researchGroupOrder: parseInt(tags.research_order) || undefined,
+      publicationOrder: parseFloat(tags.publication_order) || undefined,
 
       // Optional fields
       journal: cleanBibTeXString(tags.journal),
@@ -97,7 +105,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       preview,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'arxiv', 'project', 'slides', 'pdf']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'arxiv', 'project', 'slides', 'pdf', 'research_group', 'research_group_description', 'research_order', 'publication_order', 'corresponding', 'cofirst', 'student']),
     };
 
     // Clean up undefined fields
@@ -176,7 +184,37 @@ function buildNameVariants(name: string): Set<string> {
   return variants;
 }
 
-function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ name: string; isHighlighted?: boolean; isCorresponding?: boolean; isCoAuthor?: boolean }> {
+function parseNameList(value?: string): string[] {
+  if (!value) return [];
+
+  return value
+    .split(/[;,]/)
+    .map((name) => cleanBibTeXString(name).trim())
+    .filter(Boolean);
+}
+
+function nameMatches(name: string, candidates: string[]): boolean {
+  const lowerName = name.toLowerCase();
+  const normalizedName = normalizePersonNameForMatch(lowerName);
+
+  return candidates.some((candidate) => {
+    const variants = buildNameVariants(candidate);
+    return Array.from(variants).some((variant) => (
+      lowerName.includes(variant) ||
+      normalizedName.includes(normalizePersonNameForMatch(variant))
+    ));
+  });
+}
+
+function parseAuthors(
+  authorsStr: string,
+  highlightNames: string[],
+  annotations: { corresponding: string[]; cofirst: string[]; student: string[] } = {
+    corresponding: [],
+    cofirst: [],
+    student: [],
+  }
+): Array<{ name: string; isHighlighted?: boolean; isCorresponding?: boolean; isCoAuthor?: boolean; isStudent?: boolean }> {
   if (!authorsStr) return [];
 
   const highlightTextCandidates = new Set<string>();
@@ -223,12 +261,16 @@ function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ nam
       const isHighlighted =
         highlightTextList.some((candidate) => lowerName.includes(candidate)) ||
         highlightNormalizedList.some((candidate) => normalizedName.includes(candidate));
+      const annotatedCorresponding = nameMatches(name, annotations.corresponding);
+      const annotatedCoFirst = nameMatches(name, annotations.cofirst);
+      const isStudent = nameMatches(name, annotations.student);
 
       return {
         name,
         isHighlighted,
-        isCorresponding,
-        isCoAuthor,
+        isCorresponding: isCorresponding || annotatedCorresponding,
+        isCoAuthor: isCoAuthor || annotatedCoFirst,
+        isStudent,
       };
     })
     .filter(author => author.name);
