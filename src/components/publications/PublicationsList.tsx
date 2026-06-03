@@ -7,6 +7,7 @@ import {
     FunnelIcon,
     CalendarIcon,
     BookOpenIcon,
+    AcademicCapIcon,
 } from '@heroicons/react/24/outline';
 import { Publication } from '@/types/publication';
 import { PublicationPageConfig } from '@/types/page';
@@ -131,6 +132,17 @@ export default function PublicationsList({ config, publications, embedded = fals
                         {config.description}
                     </p>
                 )}
+                {config.google_scholar_url && (
+                    <a
+                        href={config.google_scholar_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-4 inline-flex items-center gap-2 rounded-md bg-neutral-100 px-3 py-2 text-sm font-medium text-neutral-700 transition-colors hover:bg-accent hover:text-white dark:bg-neutral-800 dark:text-neutral-300"
+                    >
+                        <AcademicCapIcon className="h-4 w-4" />
+                        Google Scholar
+                    </a>
+                )}
             </div>
 
             <div className="mb-8 space-y-4">
@@ -247,16 +259,9 @@ export default function PublicationsList({ config, publications, embedded = fals
                 ) : (
                     publicationGroups.map((group) => (
                         <section key={group.title} className="space-y-5">
-                            <div className="space-y-2">
-                                <h2 className={`${embedded ? 'text-xl' : 'text-2xl'} font-serif font-bold text-primary`}>
-                                    {group.title}
-                                </h2>
-                                {group.description && (
-                                    <p className={`${embedded ? 'text-sm' : 'text-base'} text-neutral-600 dark:text-neutral-500 leading-relaxed max-w-3xl`}>
-                                        {group.description}
-                                    </p>
-                                )}
-                            </div>
+                            <h2 className={`${embedded ? 'text-xl' : 'text-2xl'} font-serif font-bold text-primary`}>
+                                {group.title}
+                            </h2>
 
                             {group.publications.map((pub, index) => {
                                 const venue = pub.journal || pub.conference || '';

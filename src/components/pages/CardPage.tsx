@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import { CardPageConfig } from '@/types/page';
 
@@ -30,6 +31,32 @@ const markdownComponents = {
 };
 
 export default function CardPage({ config, embedded = false }: { config: CardPageConfig; embedded?: boolean }) {
+    const renderTitle = (item: CardPageConfig['items'][number]) => {
+        const className = `${embedded ? 'text-lg' : 'text-xl'} font-semibold text-primary`;
+
+        if (!item.link) {
+            return <h3 className={className}>{item.title}</h3>;
+        }
+
+        if (item.link.startsWith('http')) {
+            return (
+                <h3 className={className}>
+                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-accent">
+                        {item.title}
+                    </a>
+                </h3>
+            );
+        }
+
+        return (
+            <h3 className={className}>
+                <Link href={item.link} className="transition-colors hover:text-accent">
+                    {item.title}
+                </Link>
+            </h3>
+        );
+    };
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -59,7 +86,7 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                         <div className="flex flex-col gap-3">
                             <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                                 <div>
-                                    <h3 className={`${embedded ? 'text-lg' : 'text-xl'} font-semibold text-primary`}>{item.title}</h3>
+                                    {renderTitle(item)}
                                     {(item.role || item.subtitle || item.institution) && (
                                         <div className={`${embedded ? 'text-sm' : 'text-base'} mt-1 flex flex-wrap gap-x-2 gap-y-1 text-neutral-600 dark:text-neutral-500`}>
                                             {(item.role || item.subtitle) && (

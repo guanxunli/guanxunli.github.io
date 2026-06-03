@@ -9,12 +9,14 @@ title = "Non-parametric Statistics"
 role = "Instructor"
 institution = "Beijing Normal University at Zhuhai"
 terms = ["2025 Spring", "2025 Fall", "2026 Spring"]
+link = "/teaching/non-parametric-statistics"
 
 [[items]]
 title = "Bayesian Statistics"
 role = "Instructor"
 institution = "Beijing Normal University at Zhuhai"
 terms = ["2025 Spring", "2026 Spring"]
+link = "/teaching/bayesian-statistics"
 
 [[items]]
 title = "Introduction to Statistics B"
