@@ -1,0 +1,200 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+\usepackage{multicol}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Document  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{center}
+    {\Huge\scshape Guanxun Li} \\ \vspace{2pt}
+    \small \href{mailto:guanxun@bnu.edu.cn}{\raisebox{-0.2\height}\faEnvelope\ \underline{guanxun@bnu.edu.cn}} ~ 
+    \href{https://guanxunli.github.io}{\raisebox{-0.2\height}\faGlobe\ \underline{https://guanxunli.github.io}} ~
+    \href{https://github.com/guanxunli}{\raisebox{-0.2\height}\faGithub\ \underline{https://github.com/guanxunli}}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Academic Positions  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Academic Positions}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+    {Beijing Normal University, Zhuhai}{July 2026--Present}
+    {Associate Professor, Department of Statistics}{}
+    \resumeSubheading
+    {Beijing Normal University, Zhuhai}{Sep 2024--June 2026}
+    {Assistant Professor, Department of Statistics}{}
+    \resumeSubheading
+    {Texas A\&M University}{Sep 2022--Aug 2024}
+    {Postdoctoral Research Associate, Department of Statistics}{Advisor: Xianyang Zhang}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+    {Texas A\&M University}{Sep 2018--Aug 2022}
+    {Ph.D. in Statistics}{Advisor: Quan Zhou}
+    \resumeItemListStart
+        \resumeItem{Dissertation: \textit{New Variational and Sampling Algorithms for Large-Scale Bayesian Model Selection}.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {Texas A\&M University}{Sep 2017--May 2018}
+    {M.S. in Mathematics}{}
+    \resumeSubheading
+    {Beihang University}{Sep 2013--Jun 2017}
+    {B.S. in Applied Mathematics}{}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Research Interests  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Interests}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item Multiple Testing
+    \item Watermarking in Large Language Models (LLMs)
+    \item Markov Chain Monte Carlo (MCMC) Methodology
+    \item Bayesian Variable Selection
+    \item Single-cell RNA Sequencing Data Analysis
+    \item Microbiome Sequencing Data Analysis
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Publications  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications}
+\textit{Notation}: $^\sharp$ corresponding author; $^*$ co-first author; $^\dagger$ student supervised by me
+
+\subsubsection*{Preprints}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Li, G.} and Zhang, X. (2025). A General Framework for Multiple Testing via E-value Aggregation and Data-Dependent Weighting. \href{https://arxiv.org/abs/2312.02905}{(arXiv)}.
+    \item \textbf{Li, G.}, Smith, A., and Zhou, Q. (2024). Importance is Important: Generalized Markov Chain Importance Sampling Methods. \href{https://arxiv.org/abs/2304.06251}{(arXiv)}.
+\end{itemize}
+
+\subsubsection*{Journal Publications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Li, G.}, Lin, G., Zhang, Z., and Zhou, Q. (2026). Fast Replica Exchange Stochastic Gradient Langevin Dynamics. \textit{Statistical Papers}.
+    \item Gao, J.$^\dagger$, Chen, H., and \textbf{Li, G.$^\sharp$} (2025). Data-Dependent Weighted E-value Aggregation for Fusion Learning. \textit{Mathematics}.
+    \item Li, X., Liu, X.$^{*,\dagger}$, and \textbf{Li, G.$^\sharp$} (2025). Adaptive Testing for Segmenting Watermarked Texts From Language Models. \textit{Stat}, 14(4).
+    \item Zhong, Y., Osorio, D., \textbf{Li, G.}, Xu, Q., Yang, Y., Huang, J. Z., and Cai, J. J. (2025). scTenifoldNet and scTenifoldKnk: A package suite for single-cell gene regulatory network construction, comparison, and perturbation analysis. \textit{Statistical Theory and Related Fields}, pp. 1--10.
+    \item \textbf{Li, G.} and Zhang, X. (2025). A Note on E-values and Multiple Testing. \textit{Biometrika}, 112(1).
+    \item \textbf{Li, G.} and Zhou, Q. (2024). Bayesian Multi-Task Variable Selection with an Application to Differential DAG Analysis. \textit{Journal of Computational and Graphical Statistics}, 33(1), pp. 35--46.
+    \item \textbf{Li, G.}, Lu, Y., Chen, J., and Zhang, X. (2023). Robust Differential Abundance Analysis of Microbiome Sequencing Data. \textit{Genes}, 14(11), p. 2000.
+    \item Yang, Y., Lin, Y. T., \textbf{Li, G.}, Zhong, Y., Xu, Q., and Cai, J. J. (2023). Interpretable modeling of time-resolved single-cell gene--protein expression with CrossmodalNet. \textit{Briefings in Bioinformatics}, 24(6), p. bbad342.
+    \item Yang, Y., \textbf{Li, G.}, Zhong, Y., Xu, Q., Chen, B. J., Lin, Y. T., Chapkin, R. S., and Cai, J. J. (2023). Gene knockout inference with variational graph autoencoder learning single-cell gene regulatory networks. \textit{Nucleic Acids Research}, p. gkad450.
+    \item Yang, Y., \textbf{Li, G.}, Zhong, Y., Xu, Q., Lin, Y. T., Roman-Vicharra, C., Chapkin, R. S., and Cai, J. J. (2023). scTenifoldXct: A semi-supervised method for predicting cell--cell interactions and mapping cellular communication graphs. \textit{Cell Systems}, 14(4), pp. 302--311.
+    \item Osorio, D., Zhong, Y., \textbf{Li, G.}, Xu, Q., Yang, Y., Tian, Y., Chapkin, R. S., Huang, J. Z., and Cai, J. J. (2022). scTenifoldKnk: An efficient virtual knockout tool for gene function predictions via single-cell gene regulatory network perturbation. \textit{Patterns}, 3(3), p. 100434.
+    \item Xu, Q., \textbf{Li, G.}, Osorio, D., Zhong, Y., Yang, Y., Lin, Y. T., Zhang, X., and Cai, J. J. (2022). scInTime: A computational method leveraging single-cell trajectory and gene regulatory networks to identify master regulators of cellular differentiation. \textit{Genes}, 13(2), p. 371.
+    \item Osorio, D., Zhong, Y., \textbf{Li, G.}, Huang, J. Z., and Cai, J. J. (2020). scTenifoldNet: A machine learning workflow for constructing and comparing transcriptome-wide gene regulatory networks from single-cell data. \textit{Patterns}, 1(9), p. 100139.
+    \item Osorio, D., Yu, X., Zhong, Y., \textbf{Li, G.}, Serpedin, E., Huang, J. Z., and Cai, J. J. (2019). Single-cell expression variability implies cell function. \textit{Cells}, 9(1), p. 14.
+\end{itemize}
+
+\subsubsection*{Conference Publications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item Li, X., \textbf{Li, G.$^*$}, and Zhang, X. (2025). A Likelihood-Based Approach for Watermark Detection. \textit{International Conference on Artificial Intelligence and Statistics (AISTATS) 2025}.
+    \item Li, X., \textbf{Li, G.$^*$}, and Zhang, X. (2024). Segmenting Watermarked Texts From Language Models. \textit{Conference on Neural Information Processing Systems (NeurIPS) 2024}.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Academic Service  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Academic Service}
+\subsubsection*{Journal Editorial Board}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Mathematics}, Guest Editor for the special issue ``Advanced Mathematical and Statistical Methods for Modern Data Science and Scientific Machine Learning,'' 2025--2026.
+    \item \textbf{Biomedical Informatics}, Youth Editorial Board, 2025--2026.
+\end{itemize}
+
+\subsubsection*{Journal Reviews}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Journal of the American Statistical Association}, 2025.
+    \item \textbf{Journal of Computational and Graphical Statistics}, 2026.
+    \item \textbf{Statistics and Computing}, 2023.
+    \item \textbf{TEST}, 2025.
+    \item \textbf{Stat}, 2025.
+    \item \textbf{Journal of Statistical Computation and Simulation}, 2026.
+    \item \textbf{Stochastics}, 2026.
+    \item \textbf{Communications in Statistics - Simulation and Computation}, 2026.
+    \item \textbf{Statistical Analysis and Data Mining}, 2026.
+    \item \textbf{Journal of Applied Statistics}, 2025.
+    \item \textbf{BMC Genomics}, 2025.
+    \item \textbf{BMC Bioinformatics}, 2024.
+    \item \textbf{ETRI Journal}, 2024.
+\end{itemize}
+
+\subsubsection*{Conference Reviews}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{AISTATS}, 2021, 2022, 2023, 2024, 2025, 2026.
+    \item \textbf{ICML}, 2026.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Teaching Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Teaching Experience}
+\subsubsection*{Instructor}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textit{Nonparametric Analysis}, Beijing Normal University, Zhuhai, Spring 2025, 2026; Fall 2025, 2026.
+    \item \textit{Bayesian Analysis}, Beijing Normal University, Zhuhai, Spring 2025, 2026.
+    \item \textit{Introduction to Statistical Methods B}, Beijing Normal University, Zhuhai, Fall 2024.
+    \item \textit{Introduction to Statistical Methods}, Texas A\&M University, Summer 2020.
+\end{itemize}
+
+\subsubsection*{Teaching Assistant}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textit{Statistical Methodology II---Bayesian Modeling and Inference}, Spring 2022.
+    \item \textit{Design and Analysis of Experiments}, Fall 2019, 2020, 2021.
+    \item \textit{Applied Multivariate Analysis and Statistical Learning}, Fall 2018, 2019.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Oral Presentations  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Oral Presentations}
+\subsubsection*{Conference Presentations}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item Branch of Data Science and Artificial Intelligence, Chinese Association for Applied Statistics, 2026.
+    \item Guangdong Provincial Society for Applied Statistics, 2025.
+    \item Joint Statistical Meetings (JSM), August 2024.
+    \item National Industrial Statistics Annual Conference, 2024.
+    \item EAC ISBA Conference, August 2023.
+\end{itemize}
+
+\subsubsection*{Invited Presentations}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item International Seminar on Selective Inference, March 2024.
+\end{itemize}
+
+\end{document}

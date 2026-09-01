@@ -23,10 +23,16 @@ type = "cards"
 title = "Experience"
 
 [[sections.items]]
+title = "Associate Professor"
+subtitle = "Department of Statistics"
+institution = "Beijing Normal University at Zhuhai"
+date = "Jul 2026 - Present"
+
+[[sections.items]]
 title = "Assistant Professor"
 subtitle = "Department of Statistics"
 institution = "Beijing Normal University at Zhuhai"
-date = "2024 - Present"
+date = "Sep 2024 - Jun 2026"
 
 [[sections.items]]
 title = "Postdoctoral Research Associate"

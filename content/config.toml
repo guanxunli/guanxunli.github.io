@@ -1,12 +1,12 @@
 [site]
 title = "Guanxun Li"
-description = "Assistant Professor of Statistics at Beijing Normal University at Zhuhai."
+description = "Associate Professor of Statistics at Beijing Normal University at Zhuhai."
 favicon = "/favicon.svg"
-last_updated = "May 24, 2026"
+last_updated = "August 31, 2026"
 
 [author]
 name = "Guanxun Li"
-title = "Assistant Professor"
+title = "Associate Professor"
 institution = "Beijing Normal University at Zhuhai"
 avatar = "/profile.png"
 
